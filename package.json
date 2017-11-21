@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Adrian-Wade/halomeme#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "bootstrap": "^4.0.0-beta",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
   }
 }

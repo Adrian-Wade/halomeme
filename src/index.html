@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="notes">
     <head>
         <title>Notes App</title>
 
         <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     </head>
-    <body>
+    <body ng-controller="BodyController as bodyCtrl">
         <header class="mb-3">
             <nav class="navbar navbar-dark bg-primary">
                 <a class="navbar-brand" href="#">Notes</a>
@@ -16,11 +16,16 @@
             <p>
                 Hello World!
             </p>
+            <p>
+                    Angular is version {{bodyCtrl.angularVersion}}
+            </p>
         </div>
 
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="application.js"></script>
 
     </body>
 </html>

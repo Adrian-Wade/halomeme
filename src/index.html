@@ -3,20 +3,28 @@
 
 <head>
     <title>Notes App</title>
-    <base href="/" target="_self"/>
+
+    <!-- Required meta tags - getbootstrap.com node_modules/bootstrap/dist/css/bootstrap.min.css-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <base href="/" target="_self" />
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 
 <body ng-controller="BodyController as bodyCtrl">
-    <header class="mb-3">
-        <nav class="navbar navbar-dark bg-primary navbar-expand-md">
+
+        <img src="/TestAssetts/giphy.gif" class="img-fluid d-block mx-auto" alt="Responsive image">
+
+    <header class="mb-3 sticky-top">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <a class="navbar-brand" href="/">Notes</a>
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#headerbar-collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div id="headerbar-collapse" class="collapse navbar-collapse">
+            <div id="headerbar-collapse" class="collapse navbar-collapse sticky-top">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
@@ -24,6 +32,7 @@
                 </ul>
             </div>
         </nav>
+
     </header>
 
     <div class="container-fluid">

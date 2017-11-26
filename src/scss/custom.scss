@@ -1,0 +1,9 @@
+// Your variable overrides
+$body-bg: #ffff88;
+$body-color: #eea;
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "node_modules/bootstrap/scss/bootstrap";
+

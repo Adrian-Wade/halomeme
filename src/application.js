@@ -6,7 +6,8 @@
     var app = angular.module("notes", [
         "ngRoute",
         "home-route",
-        "about-route"
+        "about-route",
+        "footer-route"
     ]);
 
     app.run(["$log",

@@ -12,9 +12,9 @@
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 
-<body ng-controller="BodyController as bodyCtrl">
+<body ng-controller="BodyController as bodyCtrl" class ="bg-dark">
 
-        <img src="/TestAssetts/giphy.gif" class="img-fluid d-block mx-auto" alt="Responsive image">
+    <img src="/TestAssetts/giphy.gif" class="img-fluid d-block mx-auto" alt="Responsive image">
 
     <header class="mb-3 sticky-top">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -24,10 +24,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div id="headerbar-collapse" class="collapse navbar-collapse sticky-top">
+            <div id="headerbar-collapse" class="collapse navbar-collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/footer">Footer</a>
                     </li>
                 </ul>
             </div>
@@ -35,9 +40,23 @@
 
     </header>
 
-    <div class="container-fluid">
-        <section ng-view/>
+    <div class="container-fluid bg-light">
+        <section ng-view>
+        </section>
+        <section>
+            <p>This paragraph is in a seperate section below the ng-view section</p>
+            <footer class="bg-dark text-light fixed-bottom">
+                <p>This paragraph is in a footer that is in the same div container as the 
+                    ng-view. It's styled with bg-dark text-light and fixed-bottom</p>
+                <p>Constact information:
+                    <a href="mailto:someone@example.com">
+                        someone@example.com</a>.</p>
+            </footer>
+        </section>
     </div>
+
+
+
 
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -47,6 +66,7 @@
 
     <script type="text/javascript" src="routes/home.routes.js"></script>
     <script type="text/javascript" src="routes/about.routes.js"></script>
+    <script type="text/javascript" src="routes/footer.routes.js"></script>
 
     <script type="text/javascript" src="application.js"></script>
 

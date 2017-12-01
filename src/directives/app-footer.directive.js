@@ -1,16 +1,16 @@
 /*
- * App Header
+ * App Footer
  */
 (function () {
 
-    var module = angular.module("app-header", []);
+    var module = angular.module("app-footer", []);
 
-    module.directive("appHeader", [
+    module.directive("appFooter", [
         function () {
             return {
                 restrict: "E",
                 replace: true,
-                templateUrl: "views/app-header.html"
+                templateUrl: "views/app-footer.html"
             };
         }
     ]);

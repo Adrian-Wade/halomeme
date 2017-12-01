@@ -1,16 +1,16 @@
 /*
- * App Header
+ * App Sidebar
  */
 (function () {
 
-    var module = angular.module("app-header", []);
+    var module = angular.module("app-sidebar", []);
 
-    module.directive("appHeader", [
+    module.directive("appSidebar", [
         function () {
             return {
                 restrict: "E",
                 replace: true,
-                templateUrl: "views/app-header.html"
+                templateUrl: "views/app-sidebar.html"
             };
         }
     ]);

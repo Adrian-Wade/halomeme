@@ -7,8 +7,9 @@
         "ngRoute",
         "home-route",
         "about-route",
-        "footer-route",
-        "app-header"
+        "app-header",
+        "app-sidebar",
+        "app-footer"
     ]);
 
     app.run(["$log",

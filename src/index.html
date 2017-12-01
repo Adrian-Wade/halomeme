@@ -2,38 +2,36 @@
 <html ng-app="notes">
 
 <head>
-    <title>Notes App</title>
+    <title>halomeme</title>
 
     <!-- Required meta tags - getbootstrap.com node_modules/bootstrap/dist/css/bootstrap.min.css-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <base href="/" target="_self" />
-    <link rel="stylesheet" type="text/css" href="/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 </head>
 
-<body ng-controller="BodyController as bodyCtrl" class ="bg-dark">
+<body ng-controller="BodyController as bodyCtrl" class="bg-dark">
 
-    <img src="/TestAssetts/giphy.gif" class="img-fluid d-block mx-auto" alt="Responsive image">
+    <div "container-fluid bg-dark">
+        <img class="img-fluid mx-auto d-block" src="TestAssetts/halogo.png" alt="Responsive image">
+    </div>
 
     <app-header></app-header>
 
-    <div class="container-fluid bg-light">
-        <section ng-view>
-        </section>
-        <section>
-            <p>This paragraph is in a seperate section below the ng-view section</p>
-            <footer class="bg-dark text-light fixed-bottom">
-                <p>This paragraph is in a footer that is in the same div container as the 
-                    ng-view. It's styled with bg-dark text-light and fixed-bottom</p>
-                <p>Constact information:
-                    <a href="mailto:someone@example.com">
-                        someone@example.com</a>.</p>
-            </footer>
-        </section>
+    <div class="container-fluid bg-light mb-3">
+        <div class="row">
+            <div class="col-sm-8 bg-dark">
+                <section ng-view></section>
+            </div>
+            <div class="col-sm-4 bg-dark pb-5">
+                <app-sidebar></app-sidebar>
+            </div>
+        </div>
     </div>
 
-
+    <app-footer></app-footer>
 
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -43,8 +41,9 @@
 
     <script type="text/javascript" src="routes/home.routes.js"></script>
     <script type="text/javascript" src="routes/about.routes.js"></script>
-    <script type="text/javascript" src="routes/footer.routes.js"></script>
     <script type="text/javascript" src="directives/app-header.directive.js"></script>
+    <script type="text/javascript" src="directives/app-sidebar.directive.js"></script>
+    <script type="text/javascript" src="directives/app-footer.directive.js"></script>
 
     <script type="text/javascript" src="application.js"></script>
 

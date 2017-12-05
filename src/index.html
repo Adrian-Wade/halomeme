@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <base href="/" target="_self" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 
 <body ng-controller="BodyController as bodyCtrl" class="bg-dark">
@@ -20,12 +20,13 @@
 
     <app-header></app-header>
 
-    <div class="container-fluid bg-light mb-3">
+    <div class="container-fluid bg-light">
         <div class="row">
-            <div class="col-sm-8 bg-dark">
+            <div class="col-sm-8 bg-dark pb-3">
                 <section ng-view></section>
             </div>
-            <div class="col-sm-4 bg-dark pb-5">
+            <div class="col-sm-4 bg-dark pb-3">
+                <app-adbar></app-adbar>
                 <app-sidebar></app-sidebar>
             </div>
         </div>
@@ -42,6 +43,7 @@
     <script type="text/javascript" src="routes/home.routes.js"></script>
     <script type="text/javascript" src="routes/about.routes.js"></script>
     <script type="text/javascript" src="directives/app-header.directive.js"></script>
+    <script type="text/javascript" src="directives/app-adbar.directive.js"></script>
     <script type="text/javascript" src="directives/app-sidebar.directive.js"></script>
     <script type="text/javascript" src="directives/app-footer.directive.js"></script>
 

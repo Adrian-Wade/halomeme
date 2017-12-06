@@ -8,6 +8,7 @@
         "home-route",
         "about-route",
         "app-header",
+        "app-adbar",
         "app-sidebar",
         "app-footer"
     ]);

@@ -10,44 +10,48 @@
 
     <base href="/" target="_self" />
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body ng-controller="BodyController as bodyCtrl" class="bg-dark">
+<body class="bg-dark"></body>
 
-    <div "container-fluid bg-dark">
-        <img class="img-fluid mx-auto d-block" src="TestAssetts/halogo.png" alt="Responsive image">
-    </div>
+<div "container-fluid bg-dark">
+    <img class="img-fluid mx-auto d-block" src="TestAssetts/halogo.png" alt="Responsive image">
+</div>
 
-    <app-header></app-header>
+<app-header></app-header>
 
-    <div class="container-fluid bg-light">
-        <div class="row">
-            <div class="col-sm-8 bg-dark pb-3">
-                <section ng-view></section>
-            </div>
-            <div class="col-sm-4 bg-dark pb-3">
-                <app-adbar></app-adbar>
-                <app-sidebar></app-sidebar>
-            </div>
+<div class="container-fluid bg-light">
+    <div class="row">
+        <div class="col-sm-8 bg-dark pb-3">
+            <section ng-view></section>
+        </div>
+        <div class="col-sm-4 bg-dark pb-3">
+            <app-adbar></app-adbar>
+            <app-sidebar></app-sidebar>
         </div>
     </div>
+</div>
 
-    <app-footer></app-footer>
+<app-footer></app-footer>
 
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
-    <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
 
-    <script type="text/javascript" src="routes/home.routes.js"></script>
-    <script type="text/javascript" src="routes/about.routes.js"></script>
-    <script type="text/javascript" src="directives/app-header.directive.js"></script>
-    <script type="text/javascript" src="directives/app-adbar.directive.js"></script>
-    <script type="text/javascript" src="directives/app-sidebar.directive.js"></script>
-    <script type="text/javascript" src="directives/app-footer.directive.js"></script>
+<script type="text/javascript" src="services/system.service.js"></script>
 
-    <script type="text/javascript" src="application.js"></script>
+<script type="text/javascript" src="routes/home.routes.js"></script>
+<script type="text/javascript" src="routes/about.routes.js"></script>
+
+<script type="text/javascript" src="directives/app-header.directive.js"></script>
+<script type="text/javascript" src="directives/app-adbar.directive.js"></script>
+<script type="text/javascript" src="directives/app-sidebar.directive.js"></script>
+<script type="text/javascript" src="directives/app-footer.directive.js"></script>
+
+<script type="text/javascript" src="application.js"></script>
 
 </body>
 

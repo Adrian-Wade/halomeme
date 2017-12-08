@@ -10,7 +10,8 @@
         "app-header",
         "app-adbar",
         "app-sidebar",
-        "app-footer"
+        "app-footer",
+        "system-service"
     ]);
 
     app.run(["$log",
@@ -19,15 +20,7 @@
         }
     ]);
 
-    app.controller("BodyController", ["$log",
-        function ($log) {
-            $log.debug("BodyController: starting");
 
-            var that = this;
-            that.angularVersion = angular.version.full;
-
-        }
-    ]);
 
     app.config(['$locationProvider',
         function ($locationProvider) {

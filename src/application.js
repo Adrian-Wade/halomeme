@@ -5,13 +5,17 @@
 
     var app = angular.module("notes", [
         "ngRoute",
+        "ngResource",
+        "nvd3",
         "home-route",
+        "test-route",
         "about-route",
         "app-header",
         "app-adbar",
         "app-sidebar",
         "app-footer",
-        "system-service"
+        "system-service",
+        "random-service"
     ]);
 
     app.run(["$log",
